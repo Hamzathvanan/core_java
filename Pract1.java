@@ -59,6 +59,10 @@ class Person {
     public String toString() {
         return "Name: " + name + ", Age: " + age + ", Weight: " + weight;
     }
+    
+    public String testString(){
+        return "TEST TEXT";
+    }
 
     //This is a Sample Text to test the git code
     //Here i have written a java code snippet and pushed with another branch
