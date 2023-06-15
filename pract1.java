@@ -10,7 +10,7 @@ public class Pract1{
 	    .filter(person -> person.getName().equals("Hamzath"))
 	    .colloect(Collectors.toList());
 
-	System.out.println("Profile: " + myProfile);
+	System.out.println("Profile Details: " + myProfile);
     }
 
 
