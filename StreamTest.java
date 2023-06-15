@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.*;
 
-public class Pract1 {
+public class StreamTest {
 
     public static void  main(String[] args){
 
