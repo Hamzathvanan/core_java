@@ -59,6 +59,10 @@ class Person {
     public String toString() {
         return "Name: " + name + ", Age: " + age + ", Weight: " + weight;
     }
+    
+    public String testString(){
+        return "TEST TEXT";
+    }
 
 }
 
