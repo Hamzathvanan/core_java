@@ -12,9 +12,15 @@ public class Pract1 {
 
         List<Person> persons = new Persons().getPersons();
 
-        List<Person> myProfile = persons.stream()
-                .filter(person -> person.getName().equals("Hamzath"))
+	List<Person> persons2 = new ArrayList<Person>();
+        persons2.add(new Person("Uthay",45,54.3));
+        persons2.add(new Person("Stalin",56,65.3));
+        persons2.add(new Person("Vinay",56,68.2));
+
+        List<Person> myProfile = Stream.concat(persons.stream(),persons2.stream())
+                .filter(person -> person.getAge()==56)
                 .collect(Collectors.toList());
+
 
         System.out.println("Profile Details: " + myProfile);
     }
