@@ -46,6 +46,11 @@ class Person {
         return weight;
     }
 
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Age: " + age + ", Weight: " + weight;
+    }
+
 }
 
 class Persons {
