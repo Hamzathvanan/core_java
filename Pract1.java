@@ -60,6 +60,10 @@ class Person {
         return "Name: " + name + ", Age: " + age + ", Weight: " + weight;
     }
 
+    //This is a Sample Text to test the git code
+    //Here i have written a java code snippet and pushed with another branch
+    //So I am expecting a Git conflicts here
+
 }
 
 class Persons {
