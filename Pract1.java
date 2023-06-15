@@ -24,6 +24,8 @@ public class Pract1 {
                 .filter(person -> person.getAge()==56)
                 .collect(Collectors.toList());
 
+	String testString = Person.testString();
+
 
         System.out.println("Profile Details: " + myProfile);
     }
@@ -60,7 +62,8 @@ class Person {
         return "Name: " + name + ", Age: " + age + ", Weight: " + weight;
     }
     
-    public String testString(){
+    public static String testString(){
+	System.out.println("Running Test String");
         return "TEST TEXT";
     }
 
