@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.*;
@@ -13,10 +14,8 @@ public class Pract1 {
         List<Person> persons = new Persons().getPersons();
         
         List<Person> persons2 = new ArrayList<Person>();
-        person2.add("Sheron",34,67.5);
-        person2.add("Terron",56,78.2);
-
-	List<Person> persons2 = new ArrayList<Person>();
+        persons2.add(new Person("Sheron",34,67.5));
+        persons2.add(new Person("Terron",56,78.2));
         persons2.add(new Person("Uthay",45,54.3));
         persons2.add(new Person("Stalin",56,65.3));
         persons2.add(new Person("Vinay",56,68.2));
