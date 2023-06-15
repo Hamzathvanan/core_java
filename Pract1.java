@@ -11,6 +11,10 @@ public class Pract1 {
         System.out.println("Hello World!");
 
         List<Person> persons = new Persons().getPersons();
+        
+        List<Person> persons2 = new ArrayList<Person>();
+        person2.add("Sheron",34,67.5);
+        person2.add("Terron",56,78.2);
 
         List<Person> myProfile = persons.stream()
                 .filter(person -> person.getName().equals("Hamzath"))
