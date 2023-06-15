@@ -77,6 +77,7 @@ class Persons {
                 new Person("Sriram",28,64.2),
                 new Person("Mario",29,85));
     }
-
-
+}
+class Test {
+    private String name2;
 }
