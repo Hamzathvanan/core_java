@@ -17,7 +17,8 @@ public class StreamTest {
         persons2.add(new Person("Vinay",56,68.2));
 
         List<Person> myProfile = Stream.concat(persons.stream(),persons2.stream())
-                .filter(person -> person.getAge()==56)
+                .filter(person -> person.getWeight()>=60)
+				.sorted((o1,o2) -> o1.getAge() - o2.getAge())
                 .collect(Collectors.toList());
 
 
@@ -47,7 +48,7 @@ class Person {
         return age;
     }
 
-    public double weight(){
+    public double getWeight(){
         return weight;
     }
 
@@ -63,6 +64,6 @@ class Persons {
     public List<Person> getPersons(){
         return Arrays.asList(new Person("Hamzath",27,69.5),
                 new Person("Sriram",28,64.2),
-                new Person("Mario",29,85));
+                new Person("Mario",56,85));
     }
 }
