@@ -7,10 +7,6 @@ public class StreamTest {
 
     public static void  main(String[] args){
 
-        List<String> test = Arrays.asList("I", "am", "a", "list", "of", "Strings");
-
-        System.out.println("Hello World!");
-
         List<Person> persons = new Persons().getPersons();
         
         List<Person> persons2 = new ArrayList<Person>();
@@ -58,10 +54,6 @@ class Person {
     @Override
     public String toString() {
         return "Name: " + name + ", Age: " + age + ", Weight: " + weight;
-    }
-    
-    public String testString(){
-        return "TEST TEXT";
     }
 
 }
